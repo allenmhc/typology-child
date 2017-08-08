@@ -1,3 +1,16 @@
+/*
+ * Header styles
+ */
+.typology-site-title {
+  margin: 0 5px;
+  position: relative;
+  top: 8px;
+  font-weight: 400;
+  color: #f9f9f9; }
+
+/*
+ * Home page styles
+ */
 .home .typology-cover .cover-item-container {
   max-width: 400px; }
 
