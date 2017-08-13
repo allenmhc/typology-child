@@ -2,10 +2,12 @@
  * Home page styles
  */
 
-.home {
-  .typology-cover {
-    .cover-item-container {
-      max-width: 440px;
+@media (min-width: 800px) {
+  .home {
+    .typology-cover {
+      .cover-item-container {
+        max-width: 440px;
+      }
     }
   }
 }
