@@ -9,3 +9,74 @@
     }
   }
 }
+
+.typology-layout-c {
+  &.typology-post {
+    margin-bottom: 3rem;
+  }
+
+  .featured-image-overlay {
+    position: relative;
+    width: 320px;
+    height: 180px;
+
+    .defuser {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      &.featured-image-defuser { background: rgba(0,0,0,0.6); }
+      &.default-background-image-defuser { background: $color-overcast; }
+    }
+  }
+
+  .featured-image {
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+  }
+
+  .entry-header-container {
+    position: relative;
+    height: 100%;
+    padding: 30px 20px;
+
+    .entry-meta {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 90px;
+      margin-top: 0;
+    }
+
+    .entry-header {
+      a {
+        color: $color-title-text;
+      }
+      .meta-item {
+        margin-right: 0;
+        display: block;
+        line-height: 1.5;
+        &:after { content: ""; }
+      }
+      .meta-item, .meta-item span {
+        color: $color-paper;
+      }
+
+    }
+  }
+}
+
+.typology-section {
+  padding-top: 6rem;
+  padding-bottom: 12rem;
+}
