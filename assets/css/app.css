@@ -67,4 +67,14 @@
   padding-top: 6rem;
   padding-bottom: 12rem; }
 
+.typology-pagination a {
+  font-size: 1.3rem; }
+
+/*
+ * Widget styles
+ */
+.widget ul li {
+  padding-left: 0;
+  margin-bottom: 1.5rem; }
+
 /*# sourceMappingURL=app.css.map */
