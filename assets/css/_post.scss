@@ -1,0 +1,33 @@
+/*
+ * Single post styles
+ */
+
+.typology-cover-single {
+  .meta-item {
+    font-size: 1.6rem;
+    &:after {
+      content: "·";
+    }
+  }
+}
+
+.bigfoot-footnote__button {
+  height: auto;
+  min-width: auto;
+}
+
+.entry-content {
+  a {
+    border-bottom: none;
+    padding-bottom: 0;
+    transition: none;
+    @include linkUnderlines(rgb(249, 249, 249), $color-lavender);
+    &:hover { border-bottom: none; }
+  }
+
+  // Cancel out the link underline rules
+  .footnote-return {
+    text-shadow: none;
+    background-image: none;
+  }
+}
