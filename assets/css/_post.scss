@@ -30,4 +30,24 @@
     text-shadow: none;
     background-image: none;
   }
+
+  p {
+    line-height: 1.7;
+    margin-bottom: 3rem;
+  }
+}
+
+.featured-image-overlay {
+  .media-credit {
+    display: none;
+  }
+}
+
+.typology-section {
+  .section-head {
+    &:first-child {
+      margin-top: 0;
+    }
+    margin-bottom: 4rem;
+  }
 }

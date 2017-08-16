@@ -45,4 +45,34 @@ function typology_get_branding() {
 
 }
 
+/**
+ * Get list of image sizes
+ *
+ * @return array
+ * @since  1.0
+ */
+
+function typology_get_image_sizes() {
+  $sizes = array(
+    'typology-cover' => array( 'title' => esc_html__('Cover', 'typology'), 'w' => 1920, 'h' => 9999, 'crop' => false ),
+    'typology-a' => array( 'title' => esc_html__('Layout A', 'typology'), 'w' => 720, 'h' => 9999, 'crop' => false ),
+    'typology-b' => array( 'title' => esc_html__( 'Layout B', 'typology' ), 'w' => 580, 'h' => 9999, 'crop' => false ),
+    'typology-c' => array( 'title' => esc_html__( 'Layout C', 'typology' ), 'w' => 320, 'h' => 9999, 'crop' => false ),
+    'typology-featured-thumb' => array( 'title' => esc_html__( 'Featured Thumbnail', 'typology' ), 'w' => 360, 'h' => 9999, 'crop' => false ),
+  );
+
+  $disable_img_sizes = typology_get_option( 'disable_img_sizes' ); 
+
+  if(!empty( $disable_img_sizes )){
+    $disable_img_sizes = array_keys( array_filter( $disable_img_sizes ) );
+  }
+
+  if(!empty($disable_img_sizes) ){
+    foreach($disable_img_sizes as $size_id ){
+      unset( $sizes['typology-'.$size_id]);
+    }
+  }
+  $sizes = apply_filters( 'typology_modify_image_sizes', $sizes );
+  return $sizes;
+}
 ?>

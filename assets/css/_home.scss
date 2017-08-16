@@ -15,12 +15,14 @@
 .typology-layout-c {
   &.typology-post {
     margin-bottom: 3rem;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .featured-image-overlay {
     position: relative;
-    width: 320px;
-    height: 180px;
+    width: 360px;
+    height: 210px;
 
     .defuser {
       display: block;
@@ -56,7 +58,7 @@
       position: absolute;
       left: 0;
       right: 0;
-      top: 90px;
+      top: 120px;
       margin-top: 0;
     }
 

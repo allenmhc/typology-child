@@ -19,11 +19,13 @@
   .home .typology-cover .cover-item-container {
     max-width: 440px; } }
 .typology-layout-c.typology-post {
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  padding-left: 30px;
+  padding-right: 30px; }
 .typology-layout-c .featured-image-overlay {
   position: relative;
-  width: 320px;
-  height: 180px; }
+  width: 360px;
+  height: 210px; }
   .typology-layout-c .featured-image-overlay .defuser {
     display: block;
     position: absolute;
@@ -54,7 +56,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 90px;
+    top: 120px;
     margin-top: 0; }
   .typology-layout-c .entry-header-container .entry-header a {
     color: #f9f9f9; }
@@ -119,5 +121,16 @@
 .entry-content .footnote-return {
   text-shadow: none;
   background-image: none; }
+.entry-content p {
+  line-height: 1.7;
+  margin-bottom: 3rem; }
+
+.featured-image-overlay .media-credit {
+  display: none; }
+
+.typology-section .section-head {
+  margin-bottom: 4rem; }
+  .typology-section .section-head:first-child {
+    margin-top: 0; }
 
 /*# sourceMappingURL=app.css.map */

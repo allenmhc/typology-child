@@ -6,7 +6,7 @@
   <div class="featured-image-overlay">
 
     <?php if( typology_get_option( 'layout_c_fimg' ) && has_post_thumbnail() ) : ?>
-      <?php the_post_thumbnail('typology-c', ['class'=> 'featured-image']); ?>
+      <?php the_post_thumbnail('typology-featured-thumb', ['class'=> 'featured-image']); ?>
     <?php endif; ?>
 
     <div class="entry-header-container">
