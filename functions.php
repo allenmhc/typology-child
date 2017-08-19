@@ -75,4 +75,20 @@ function typology_get_image_sizes() {
   $sizes = apply_filters( 'typology_modify_image_sizes', $sizes );
   return $sizes;
 }
+
+/**
+ * Get related posts for particular post
+ *
+ * @param int     $post_id
+ * @return object WP_Query
+ * @since  1.0
+ */
+function typology_get_related_posts($post_id = false) {
+  $related = yarpp_get_related( array( 'limit' => 4 ), $post_id);
+  return new WP_Query( array(
+                      'post__in' => wp_list_pluck( $related, 'ID' ),
+                      'posts_per_page' => 4,
+                      'ignore_sticky_posts' => true,
+                      'post__not_in' => array( $post_id )));
+}
 ?>
