@@ -1,0 +1,25 @@
+/*
+ * Articles page styles
+ */
+
+.section-content-articles {
+  .typology-post.typology-layout-b {
+    padding-bottom: 3rem;
+  }
+
+  .typology-featured-image {
+    margin-bottom: 2rem;
+
+    .post-date-hidden {
+      margin-bottom: 1rem;
+    }
+
+    .media-credit {
+      display: none;
+    }
+  }
+
+  .meta-item {
+    &:after { content: "·"; }
+  }
+}

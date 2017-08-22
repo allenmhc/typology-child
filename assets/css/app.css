@@ -154,4 +154,18 @@
 .wpf7 {
   margin-top: 2rem; }
 
+/*
+ * Articles page styles
+ */
+.section-content-articles .typology-post.typology-layout-b {
+  padding-bottom: 3rem; }
+.section-content-articles .typology-featured-image {
+  margin-bottom: 2rem; }
+  .section-content-articles .typology-featured-image .post-date-hidden {
+    margin-bottom: 1rem; }
+  .section-content-articles .typology-featured-image .media-credit {
+    display: none; }
+.section-content-articles .meta-item:after {
+  content: "·"; }
+
 /*# sourceMappingURL=app.css.map */

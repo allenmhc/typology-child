@@ -59,6 +59,7 @@ function typology_get_image_sizes() {
     'typology-b' => array( 'title' => esc_html__( 'Layout B', 'typology' ), 'w' => 580, 'h' => 9999, 'crop' => false ),
     'typology-c' => array( 'title' => esc_html__( 'Layout C', 'typology' ), 'w' => 320, 'h' => 9999, 'crop' => false ),
     'typology-featured-thumb' => array( 'title' => esc_html__( 'Featured Thumbnail', 'typology' ), 'w' => 360, 'h' => 9999, 'crop' => false ),
+    'typology-article-thumb' => array( 'title' => esc_html__( 'Article Thumbnail', 'typology' ), 'w' => 580, 'h' => 9999, 'crop' => false ),
   );
 
   $disable_img_sizes = typology_get_option( 'disable_img_sizes' ); 
