@@ -27,18 +27,21 @@
         <h3>Categories</h3>
 
         <p>
+          <ul class="display-categories">
           <?php
-            $args = array(
-              'smallest' => 12,
-              'largest' => 24,
-              'unit' => 'px',
-              'separator' => ' · ',
-              'taxonomy' => 'category',
-              'format' => 'list',
-            );
-            // wp_tag_cloud($args);
-            wp_list_categories();
+            $categories = get_terms(array('taxonomy' => 'category'));
+            $max_count = max(array_map(
+              function($category) { return $category->count; },
+              $categories
+            ));
+            foreach($categories as $category) {
+              $name = $category->name;
+              $percentage = $category->count / $max_count * 100;
+              $link = get_category_link($category->term_id);
+              echo "<li style=\"width: $percentage%\" class=\"category\"><a href=\"$link\">$name</a></li>";
+            }
           ?>
+          </ul>
         </p>
 
         <h3>Posts by Year</h3>

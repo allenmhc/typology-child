@@ -1,0 +1,18 @@
+/*
+ * Archives post styles
+ */
+
+.display-categories {
+  padding-left: 0;
+  font-size: 90%;
+  .category {
+    list-style: none;
+    border-bottom: 2px solid $color-overcast;
+    margin-bottom: 2rem;
+    min-width: 60px;
+    a {
+      text-decoration: none;
+      color: $color-overcast;
+    }
+  }
+}

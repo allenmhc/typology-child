@@ -168,4 +168,19 @@
 .section-content-articles .meta-item:after {
   content: "·"; }
 
+/*
+ * Archives post styles
+ */
+.display-categories {
+  padding-left: 0;
+  font-size: 90%; }
+  .display-categories .category {
+    list-style: none;
+    border-bottom: 2px solid #9099A2;
+    margin-bottom: 2rem;
+    min-width: 60px; }
+    .display-categories .category a {
+      text-decoration: none;
+      color: #9099A2; }
+
 /*# sourceMappingURL=app.css.map */
