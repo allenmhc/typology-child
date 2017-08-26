@@ -183,4 +183,19 @@
       text-decoration: none;
       color: #9099A2; }
 
+.display-archives {
+  padding-left: 0;
+  font-size: 140%; }
+  .display-archives .archive {
+    list-style: none;
+    width: 15%;
+    display: inline-block;
+    line-height: 1.4;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-top: 2px solid #96858F; }
+    .display-archives .archive a {
+      text-decoration: none;
+      color: #9099A2; }
+
 /*# sourceMappingURL=app.css.map */

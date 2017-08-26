@@ -47,7 +47,7 @@
         <h3>Posts by Year</h3>
 
         <p>
-          <ul>
+          <ul class="display-archives">
           <?php
             $first_year = date('Y', strtotime(get_posts(array(
               'numberposts' => 1,
@@ -56,7 +56,7 @@
             ))[0]->post_date));
             for ($i = date('Y'); $i >= $first_year; $i--) {
               $link = get_year_link($i);
-              echo "<li><a href=\"$link\">$i</a></li>";
+              echo "<li class=\"archive\"><a href=\"$link\">$i</a></li>";
             }
           ?>
           </ul>

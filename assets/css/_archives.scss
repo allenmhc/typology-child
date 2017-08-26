@@ -16,3 +16,22 @@
     }
   }
 }
+
+
+.display-archives {
+  padding-left: 0;
+  font-size: 140%;
+  .archive {
+    list-style: none;
+    width: 15%;
+    display: inline-block;
+    line-height: 1.4;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-top: 2px solid $color-dusty;
+    a {
+      text-decoration: none;
+      color: $color-overcast;
+    }
+  }
+}
