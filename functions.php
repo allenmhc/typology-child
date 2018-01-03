@@ -16,6 +16,7 @@ function typology_child_load_scripts() {
   wp_register_style('typology_child_app_style', trailingslashit(get_stylesheet_directory_uri()).'assets/css/app.css', false, TYPOLOGY_THEME_VERSION, 'screen');
   wp_enqueue_style('typology_child_style');
   wp_enqueue_style('typology_child_app_style');
+  wp_enqueue_style( 'google-font-source-sans-pro', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700', array(), TYPOLOGY_THEME_VERSION );
 }
 
 /**
